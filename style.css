@@ -32,11 +32,30 @@
     animation: mario-jump-animation 1500ms ease-out;
 }
 
-.clouds {
+
+.clouds-1 {
     position: absolute;
     width: 550px;
-    animation: clouds-animation 40s infinite linear;
+    padding-top: 50px;
+    z-index: 3;
+    animation: clouds-animation-1 40s infinite linear;
 }
+.clouds-2 {
+    position: absolute;
+    width: 270px;
+    padding-top: 150px;
+    z-index: 2;
+    animation: clouds-animation-2 50s infinite linear;
+}
+
+.clouds-3 {
+    position: absolute;
+    width: 150px;
+    padding-top: 300px;
+    z-index: 1;
+    animation: clouds-animation-3 75s infinite linear;
+}
+
 
 @keyframes tubulação-animation {
     from{
@@ -64,9 +83,27 @@
     
 }
 
-@keyframes clouds-animation {
+@keyframes clouds-animation-1 {
     from{
         right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation-2 {
+    from{
+        right: -1300px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation-3 {
+    from{
+        right: -250px;
     }
     to{
         right: 100%;
