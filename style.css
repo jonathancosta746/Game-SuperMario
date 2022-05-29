@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 1px solid blue;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.tubulação {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+    animation: tubulação-animation 3s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.jump{
+    animation: mario-jump-animation 1500ms ease-out;
+}
+
+@keyframes tubulação-animation {
+    from{
+        right: 0px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+@keyframes mario-jump-animation {
+    0%{
+        bottom: 0px;
+    }
+    45%{
+        bottom: 180px
+    }
+    55%{
+        bottom: 180px;
+    }
+    100%{
+        bottom:0px;
+    }
+    
+}
