@@ -1,36 +1,36 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background-color: rgb(236, 236, 236);
 }
 
 
 .game-board {
+    
     width: 100%;
     height: 500px;
-    border-bottom: 15px solid rgb(10, 168, 4);
+    border-top: 800px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87CEE8, #E0F6FF);
 }
 
-.pipe {
-    position: absolute;
-    bottom: 0;
-    width: 80px;
-    right: -80px;
-}
 
-.pipe-animation{
-    animation: pipe-animation 3s infinite linear;
-}
+
+
+/*=============== Mario ===============*/
 
 .mario {
     width: 60px;
     position: absolute;
     bottom: 0;
     margin-left: 100px;
+    padding-bottom: 34px;
     z-index: 10;
 }
 
@@ -38,7 +38,151 @@
     animation: mario-jump-animation 1500ms ease-out;
 }
 
+@keyframes mario-jump-animation {
+    0%{
+        bottom: 0px;
+    }
+    45%{
+        bottom: 180px
+    }
+    55%{
+        bottom: 180px;
+    }
+    100%{
+        bottom:0px;
+    }
+    
+}
 
+
+
+
+
+
+/*=============== Cenário ===============*/
+
+/*Tubulação */
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+    padding-bottom: 34px;
+    z-index: 10;
+}
+
+.pipe-animation{
+    animation: grass-animation 3s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+/*Grama */
+.grass {
+    position: absolute;
+    bottom: 0;
+    width: 160px;
+    right: -160px;
+    padding-bottom: 34px;
+}
+
+.grass-animation{
+    animation: grass-animation 3s infinite linear;
+}
+
+@keyframes grass-animation {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+
+/*Piso*/
+.floor {
+        width: 1500px;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 34px;
+       
+}
+.floor-1{
+    position: absolute;  
+    z-index: 0;
+}
+
+.floor-animation-1{
+    animation: floor-animation-1 3.1s infinite linear;
+}
+
+@keyframes floor-animation-1 {
+    0%{
+        right:0px;
+    }
+    100%{
+        right: 100%;    
+    }
+}
+
+
+
+
+.floor-2{
+    position: absolute; 
+    right: -1500px;
+    z-index: 10;
+}
+
+.floor-animation-2{
+    animation: floor-animation-2 6.2s infinite linear;
+}
+
+@keyframes floor-animation-2 {
+    0%{
+        right:-1500px;
+    }
+    100%{
+        right: 100%;    
+    }
+}
+
+
+
+
+.floor-3{
+    position: absolute;  
+    right: -1500px;
+    z-index: 10;
+}
+
+.floor-animation-3{
+    animation: floor-animation-3 6.2s infinite linear;
+}
+
+@keyframes floor-animation-3 {
+    0%{
+        right:-1500px;
+    }
+    100%{
+        right: 100%;    
+    }
+}
+
+
+
+
+/*Nuvens*/
 .clouds-1 {
     position: absolute;
     width: 550px;
@@ -61,32 +205,6 @@
     animation: clouds-animation-3 75s infinite linear;
 }
 
-
-@keyframes pipe-animation {
-    from{
-        right: -80px;
-    }
-    to{
-        right: 100%;
-    }
-    
-}
-
-@keyframes mario-jump-animation {
-    0%{
-        bottom: 0px;
-    }
-    45%{
-        bottom: 180px
-    }
-    55%{
-        bottom: 180px;
-    }
-    100%{
-        bottom:0px;
-    }
-    
-}
 
 @keyframes clouds-animation-1 {
     from{
