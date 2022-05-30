@@ -15,17 +15,18 @@
     background: linear-gradient(#87CEE8, #E0F6FF);
 }
 
-.tubulação {
+.pipe {
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: tubulação-animation 3s infinite linear;
+    animation: pipe-animation 3s infinite linear;
 }
 
 .mario {
     width: 150px;
     position: absolute;
     bottom: 0;
+    z-index: 10;
 }
 
 .jump{
@@ -37,27 +38,26 @@
     position: absolute;
     width: 550px;
     padding-top: 50px;
-    z-index: 3;
+    z-index: 4;
     animation: clouds-animation-1 40s infinite linear;
 }
 .clouds-2 {
     position: absolute;
     width: 270px;
     padding-top: 150px;
-    z-index: 2;
+    z-index: 3;
     animation: clouds-animation-2 50s infinite linear;
 }
-
 .clouds-3 {
     position: absolute;
     width: 150px;
     padding-top: 300px;
-    z-index: 1;
+    z-index: 2;
     animation: clouds-animation-3 75s infinite linear;
 }
 
 
-@keyframes tubulação-animation {
+@keyframes pipe-animation {
     from{
         right: -80px;
     }

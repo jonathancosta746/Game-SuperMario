@@ -1,30 +1,35 @@
 const mario = document.querySelector('.mario');
-const tubulação = document.querySelector('.tubulação');
+const pipe = document.querySelector('.pipe');
+
 
 const jump = () => {
     mario.classList.add('jump');
 
     setTimeout(() => {
         mario.classList.remove('jump');
-    }, 1500);
+    }, 1500); 
 }
 
+document.addEventListener('keydown', jump);
+
 const loop = setInterval(() => {
-    const tubulaçãoPosition = tubulação.offsetLeft;
+    const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-        if(tubulaçãoPosition <= 120 && tubulaçãoPosition > 0 && marioPosition < 80) {
+    console.log(pipePosition);
+   
+        if (pipePosition < 120 && pipePosition > 0 && marioPosition < 80 ) {
 
-            tubulação.style.animation = 'none';
-            tubulação.style.left = '${tubulaçãoPosition}px';
+            pipe.style.animation = 'none';
+            pipe.style.left = `${pipePosition}px`;
 
             mario.style.animation = 'none';
-            mario.style.left = '${marioPosition}px';
+            mario.style.bottom = `${marioPosition}px`;
 
             mario.src = './images/game-over.png';
             mario.style.width = '75px';
             mario.style.marginLeft = '50px';
-        }
-}, 10)
 
-document.addEventListener('keydown', jump);
+            clearInterval(loop);
+         }
+}, 10);
