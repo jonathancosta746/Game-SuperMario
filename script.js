@@ -2,6 +2,8 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
 
+/*================ Função Pulo ===================*/ 
+
 const jump = () => {
     mario.classList.add('jump');
 
@@ -11,6 +13,14 @@ const jump = () => {
 }
 
 document.addEventListener('keydown', jump);
+
+
+
+
+
+
+
+/*================ Código para acabar o jogo ===================*/ 
 
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
