@@ -73,6 +73,8 @@ const checkGameOver = setInterval(() => {
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
     const grassPosition = grass.offsetLeft;
     const floorPosition1 = floor1.offsetLeft;
+    const floorPosition2 = floor2.offsetLeft;
+    const floorPosition3 = floor3.offsetLeft;
 
    
         if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80 ) {
@@ -93,6 +95,11 @@ const checkGameOver = setInterval(() => {
             floor1.style.animation = 'none';
             floor1.style.left = `${floorPosition1}px`;
 
+            floor2.style.animation = 'none';
+            floor2.style.left = `${floorPosition2}px`;
+
+            floor3.style.animation = 'none';
+            floor3.style.left = `${floorPosition3}px`;
 
 
         
