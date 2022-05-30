@@ -1,6 +1,9 @@
 mario = document.querySelector('.mario');
 pipe = document.querySelector('.pipe');
 grass = document.querySelector('.grass');
+textStart = document.querySelector('text-start')
+audioStart = new Audio('./audio/theme.mp3')
+audioGameOver = new Audio('./audio/gameover.mp3')
 floor1 = document.querySelector('.floor-1')
 floor2 = document.querySelector('.floor-2')
 floor3 = document.querySelector('.floor-3')
@@ -10,11 +13,14 @@ floor3 = document.querySelector('.floor-3')
 /*================ Função Start ===================*/ 
 
 const start = () => {
+
+    document.getElementById("text-start").style.color = "rgb(236, 236, 236)";
+
     pipe.classList.add('pipe-animation');
 
     mario.src = './images/mario.gif';
-        mario.style.width = '150px';
-        mario.style.marginLeft = '50px';
+    mario.style.width = '150px';
+    mario.style.marginLeft = '50px';
 
     function grassAnimation(){
         grass.classList.add('grass-animation');
@@ -31,7 +37,10 @@ const start = () => {
                            
     function floorAnimation3(){
         floor3.classList.add('floor-animation-3');
-            }setInterval(floorAnimation3, 3100);        
+            }setInterval(floorAnimation3, 3100); 
+     
+            
+  /*  audioStart.play();   */     
 }
 
 document.addEventListener('keydown', start);
@@ -101,8 +110,13 @@ const checkGameOver = setInterval(() => {
             floor3.style.animation = 'none';
             floor3.style.left = `${floorPosition3}px`;
 
+              
+          /*  audioGameOver.play();*/
+            
 
-        
+            document.getElementById("text-start").style.color = "black";
+            document.getElementById("text-start").innerHTML="<strong>GAME OVER</strong>";
+
 
             clearInterval(loop);
          }
