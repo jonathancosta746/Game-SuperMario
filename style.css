@@ -19,13 +19,18 @@
     position: absolute;
     bottom: 0;
     width: 80px;
+    right: -80px;
+}
+
+.pipe-animation{
     animation: pipe-animation 3s infinite linear;
 }
 
 .mario {
-    width: 150px;
+    width: 60px;
     position: absolute;
     bottom: 0;
+    margin-left: 100px;
     z-index: 10;
 }
 

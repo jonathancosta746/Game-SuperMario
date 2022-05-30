@@ -2,6 +2,31 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
 
+/*================ Função Start ===================*/ 
+
+const start = () => {
+    pipe.classList.add('pipe-animation');
+    mario.src = './images/mario.gif';
+            mario.style.width = '150px';
+            mario.style.marginLeft = '50px';
+
+
+
+}
+
+document.addEventListener('keydown', start);
+
+
+
+
+
+
+
+
+
+
+
+
 /*================ Função Pulo ===================*/ 
 
 const jump = () => {
