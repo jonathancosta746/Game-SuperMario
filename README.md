@@ -5,7 +5,7 @@
 Disponível do link https://jonathancosta746.github.io/Game-SuperMario/
 
 ## Como funciona o projeto?
-WebGame simples utilizando JavaScript para fazer a manipulação do HTML para interetividade.
+WebGame simples utilizando JavaScript para fazer a manipulação do HTML para criar interatividade.
 
 ## Tecnologias Usadas
 HTML, CSS, e JavaScript.
