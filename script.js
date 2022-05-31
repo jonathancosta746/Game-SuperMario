@@ -40,7 +40,7 @@ const start = () => {
             }setInterval(floorAnimation3, 3100); 
      
             
-  /*  audioStart.play();   */     
+    audioStart.play();
 }
 
 document.addEventListener('keydown', start);
@@ -113,9 +113,15 @@ const checkGameOver = setInterval(() => {
             document.getElementById("text-start").style.color = "black";
             document.getElementById("text-start").innerHTML="<strong>GAME OVER</strong>";
 
+
+            function stopAudioStart(){
+                audioStart.pause();
+                }stopAudioStart();
+
             audioGameOver.play();
+
             function stopAudio(){
-                audioGameOver.pause(), sound.currentTime = 0;
+                audioGameOver.pause();
                 }setTimeout(stopAudio, 8000);
 
             clearInterval(checkGameOver);
