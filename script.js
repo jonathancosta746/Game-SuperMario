@@ -110,14 +110,15 @@ const checkGameOver = setInterval(() => {
             floor3.style.animation = 'none';
             floor3.style.left = `${floorPosition3}px`;
 
-              
-          /*  audioGameOver.play();*/
-            
-
             document.getElementById("text-start").style.color = "black";
             document.getElementById("text-start").innerHTML="<strong>GAME OVER</strong>";
 
+            audioGameOver.play();
+            function stopAudio(){
+                audioGameOver.pause(), sound.currentTime = 0;
+                }setTimeout(stopAudio, 8000);
 
-            clearInterval(loop);
+            clearInterval(checkGameOver);
          }
 }, 10);
+
