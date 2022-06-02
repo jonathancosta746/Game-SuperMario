@@ -58,7 +58,7 @@ Foi utilizada a função .offsetLeft para monitoramento da posição das imagens
 
 
 Um pouco mais sobre o projeto neste [link](https://www.youtube.com/watch?v=4WDCv1O13AY) no youtube.
-Para dúvidas ou sugestões poderá me contatar através do meu [email](mailto:jonathancosta746@gmail.com) ou [Linkedin](https://www.youtube.com/watch?v=4WDCv1O13AY).
+Para dúvidas ou sugestões poderá me contatar através do meu [email](mailto:jonathancosta746@gmail.com) ou [Linkedin](https://www.linkedin.com/in/jonathansantos-costa/).
 
 
 
