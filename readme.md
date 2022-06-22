@@ -54,11 +54,24 @@ Foi utilizada a função .offsetLeft para monitoramento da posição das imagens
 
 ![image](https://user-images.githubusercontent.com/26524921/171683017-702fac2f-000c-426e-92d1-2c7ae681d266.png)
 
+# Lógica utilizada na animação do piso
+
+Foram adicionadas 3 imagens, ao iniciar o game o javaScript iniciará a animação da primeira e segunda imagem, quando o canto superior direito da segunda imagem chegar ao final da tela, a animação da terceira imagem será iniciada, dicando assim em loop com a segunda imagem.
+
+
+
+
+https://user-images.githubusercontent.com/26524921/175052502-61a5a651-1361-4359-b771-1fbc63ae0b49.mp4
+
+
+
 #
 
 
 Um pouco mais sobre o projeto neste [link](https://www.youtube.com/watch?v=4WDCv1O13AY) no youtube.
 Para dúvidas ou sugestões poderá me contatar através do meu [email](mailto:jonathancosta746@gmail.com) ou [Linkedin](https://www.linkedin.com/in/jonathansantos-costa/).
+
+
 
 
 
