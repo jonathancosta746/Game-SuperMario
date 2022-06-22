@@ -56,7 +56,7 @@ Foi utilizada a função .offsetLeft para monitoramento da posição das imagens
 
 # Lógica utilizada na animação do piso
 
-Foram adicionadas 3 imagens, ao iniciar o game o javaScript iniciará a animação da primeira e segunda imagem, quando o canto superior direito da segunda imagem chegar ao final da tela, a animação da terceira imagem será iniciada, dicando assim em loop com a segunda imagem.
+Foram adicionadas 3 imagens, ao iniciar o game o javaScript iniciará a animação das imagens, no CSS está configurada um tempo para que a primeira e segunda imagem iniciem juntas, quando o canto superior direito da segunda imagem chegar ao final da tela, a primeira imagem ficará abaixo das demais sem animação e a animação da terceira imagem será iniciada, ficando assim em loop com a segunda imagem até o game-over.
 
 
 
